@@ -124,7 +124,7 @@ def visualize_segmentation_comparison(images: torch.Tensor,
 
 
 def test_visualization(model: nn.Module, loader: DataLoader, mask: torch.Tensor,
-                       device: torch.device, subtitle: str, save_path: str | None, num_images=3):
+                       device: torch.device, subtitle: str, save_path, num_images=3):
     """Visualize segmentation results on test set
 
     Args:
