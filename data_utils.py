@@ -30,7 +30,7 @@ class ContDataset(Dataset):
     def __len__(self):
         # Return the total number of image pairs
         # There is one less pair than the number of images
-        return len(self.image_filenames) - 1
+        return (len(self.image_filenames)//2)-1
 
     def __getitem__(self, idx):
         if torch.is_tensor(idx):
